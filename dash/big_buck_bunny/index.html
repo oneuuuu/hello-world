@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dash</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+      }
+
+      video {
+        height: 100vh;
+        border: 0px;
+      }
+
+      video:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <video controls data-dashjs-player loop="true" autoplay="true">
+      <source
+        src="big_buck_bunny_1080_10s_1MB.mpd"
+        type="application/dash+xml"
+      />
+      <!-- <source src="big_buck_bunny_1080_10s_1MB.mp4" type="video/mp4" /> -->
+    </video>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+  </body>
+</html>
